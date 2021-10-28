@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Dictionary {
@@ -30,4 +31,11 @@ public class Dictionary {
        return translations.get(traduction);
     }
 
+    public void addTranslationMultiple(String francais, String traductionmultiple) {
+    }
+
+
+     List<String> getTranslationMultiple(List<String> traductionmultiple) {
+        return traductionmultiple;
+    }
 }

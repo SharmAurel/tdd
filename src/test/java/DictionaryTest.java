@@ -32,8 +32,16 @@ public class DictionaryTest {
 
     @Test public void testOneTranslationSecond() {
         dict.addTranslation("Londres", "London");
-        assertEquals(dict.getTranslation("Londres"),"London");
+        assertEquals(dict.getTranslation("London"),"Londres");
     }
+
+    @Test public void testMultipleTranslation() {
+        dict.addTranslationMultiple("bonjour","hello");
+        dict.addTranslationMultiple("bonjour","hallo");
+        assertEquals(dict.getTranslation("hello"),"bonjour");
+    }
+
+
 
 
 
