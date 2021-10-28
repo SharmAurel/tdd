@@ -30,4 +30,11 @@ public class DictionaryTest {
         assertEquals(dict.getTranslation("contre"),"against");
     }
 
+    @Test public void testOneTranslationSecond() {
+        dict.addTranslation("Londres", "London");
+        assertEquals(dict.getTranslation("Londres"),"London");
+    }
+
+
+
 }
