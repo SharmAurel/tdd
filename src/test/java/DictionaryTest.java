@@ -22,7 +22,7 @@ public class DictionaryTest {
 
     @Test public void testDictionaryisEmpty()
     {
-            assertEquals(dict.isEmpty(), true);
+            assertTrue(dict.isEmpty());
     }
 
     @Test public void testOneTranslation() {
@@ -34,6 +34,9 @@ public class DictionaryTest {
         dict.addTranslation("Londres", "London");
         assertEquals(dict.getTranslation("Londres"),"London");
     }
+
+
+
 
 
 

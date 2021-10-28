@@ -16,7 +16,7 @@ public class Dictionary {
     }
 
     public boolean isEmpty() {
-        return name.isEmpty();
+        return translations.isEmpty();
     }
 
 
