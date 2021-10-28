@@ -32,12 +32,12 @@ public class DictionaryTest {
 
     @Test public void testOneTranslation() {
         dict.addTranslation("contre", "against");
-        assertEquals(dict.getTranslation("contre"),"against");
+        assertThat(dict.getMultipleTranslation("contre"),containsInAnyOrder("against"));
     }
 
     @Test public void testOneTranslationSecond() {
         dict.addTranslation("Londres", "London");
-        assertEquals(dict.getTranslation("Londres"),"London");
+        assertThat(dict.getMultipleTranslation("Londres"),containsInAnyOrder("London"));
     }
 
     @Test public void testMultipleTranslation() {

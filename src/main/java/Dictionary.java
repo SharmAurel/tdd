@@ -35,12 +35,6 @@ public class Dictionary {
         }
 
     }
-
-    String getTranslation(String traduction)
-    {
-        return translations.get(traduction);
-    }
-
     List<String> getMultipleTranslation(String traduction){
        return multipletranslations.get(traduction);
     }
