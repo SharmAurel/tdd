@@ -1,13 +1,18 @@
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.List;
+import java.util.Map;
+
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 import static org.junit.Assert.*;
 
 
 public class DictionaryTest {
 
     private Dictionary dict;
-
+    private Map<String, List<String>> traductions;
 
     @Before
     public void initialize () {
@@ -32,13 +37,13 @@ public class DictionaryTest {
 
     @Test public void testOneTranslationSecond() {
         dict.addTranslation("Londres", "London");
-        assertEquals(dict.getTranslation("London"),"Londres");
+        assertEquals(dict.getTranslation("Londres"),"London");
     }
 
     @Test public void testMultipleTranslation() {
-        dict.addTranslationMultiple("bonjour","hello");
-        dict.addTranslationMultiple("bonjour","hallo");
-        assertEquals(dict.getTranslation("hello"),"bonjour");
+        dict.addTranslation("bonjour","hello");
+        dict.addTranslation("bonjour","hallo");
+        assertThat(dict.getMultipleTranslation("bonjour"), containsInAnyOrder("hello","hallo"));
     }
 
 
