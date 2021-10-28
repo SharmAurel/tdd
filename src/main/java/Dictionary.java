@@ -1,9 +1,12 @@
 public class Dictionary {
 
+    private String name;
+
     public Dictionary() {
+
     }
 
-    void getName(){
-        return("Example");
+    String getName(){
+        return ("Example");
     }
 }

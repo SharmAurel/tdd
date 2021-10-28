@@ -1,7 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
-
+import static org.junit.Assert.*;
 
 
 public class DictionaryTest {
@@ -16,7 +16,7 @@ public class DictionaryTest {
 
 
     @Test public void testDictionaryName() {
-        assertThat(dict.getName(), equalTo("Example"));
+        assertEquals(dict.getName(), "Example");
     }
 
 
