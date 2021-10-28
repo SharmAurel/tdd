@@ -20,3 +20,9 @@ Quelle duplication existe pour l’instant dans notre code ?
 
 Réponse : l'attribut dict de type Dictionnaire est dupliqué ici dans notre test. 
 
+Traduction multiples : 
+
+Question 1 :  Que proposez-vous pour pouvoir gérer les traductions multiples ?
+
+Réponse : Une liste de string dans la hashmap pour la "partie" traduction.
+
