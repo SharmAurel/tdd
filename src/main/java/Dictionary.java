@@ -12,4 +12,19 @@ public class Dictionary {
     public boolean isEmpty() {
         return name.isEmpty();
     }
+
+
+    public void addTranslation(String francais,String traduction) {
+
+    }
+
+    String getTranslation(String traduction){
+        return "against";
+    }
+
+
+
+
+
+
 }
