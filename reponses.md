@@ -19,3 +19,4 @@ Question 5 :
 Quelle duplication existe pour l’instant dans notre code ?
 
 Réponse : l'attribut dict de type Dictionnaire est dupliqué ici dans notre test. 
+

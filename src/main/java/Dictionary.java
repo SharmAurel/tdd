@@ -8,4 +8,8 @@ public class Dictionary {
     String getName(){
         return this.name;
     }
+
+    public boolean isEmpty() {
+        return name.isEmpty();
+    }
 }
