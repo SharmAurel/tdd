@@ -1,7 +1,5 @@
 public class Dictionary {
 
-    private String name;
-
     public Dictionary() {
 
     }
